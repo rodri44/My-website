@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  cursor: url("../assets/cursor4.png") 16 16, pointer;
+}
+body{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+p{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+  color: #EE1D23;
+}
+
+.price{
+  font-size: 68px;
+  align-self: flex-end;
+  transition: 420ms all ease;
+  opacity: 0;
+}
+
+#dref{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+#dref::-webkit-scrollbar {
+    display: none;
+}
+.unic{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 12%;
+  padding-bottom: -32%;
+}
+
+.oneIlus{
+  height: 640px;
+  width: 640px;
+  padding: 20px;
+  margin: 40px;
+  outline:4px solid #EE1D23;
+  background-color: white;
+  transition: 300ms all ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 680px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.oneIlus:hover{
+  background-color: white;
+  background-size: 670px;
+}
+.oneIlus:hover > .price{
+  opacity: 1;
+}
